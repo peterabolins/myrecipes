@@ -68,8 +68,12 @@ h2 {
   margin-top: 10px;
 }
 
-.gravatar, .photo {
+.gravatar, .photo, .form-photo {
   border-radius: 15px;
+}
+
+.form-photo {
+  margin-bottom: 20px;
 }
 
 .well {

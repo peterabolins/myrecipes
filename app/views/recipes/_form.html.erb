@@ -16,6 +16,10 @@
         <%= f.file_field :picture, accept: 'image/jpeg, image/gif, image/png' %>
       </span>
 
+      <div class="col-md-3 col-md-offset-7">
+        <%= image_tag(@recipe.picture.url, size: "250x150", class: "form-photo") if @recipe.picture? %>
+      </div>
+
       <%= f.submit(@recipe.new_record? ? "Create Recipe" : "Edit Recipe", class: "btn btn-success") %>
     <% end %>
   </div>
